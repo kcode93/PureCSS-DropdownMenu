@@ -1,0 +1,62 @@
+:root {
+	--background-color: #f4f4f4;
+	--primary-color: #333;
+	--secondary-color: #17c0cc;
+	--link-hover-color: #fff;
+	--dropDown-background: #e7e7e7c0;
+}
+
+html,
+body {
+	background-color: var(--background-color);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar ul {
+	list-style: none;
+}
+
+#navbar ul li {
+	color: var(--primary-color);
+	display: inline-block;
+	padding: 1rem;
+	position: relative;
+}
+
+#navbar ul li a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+/*Hide nested ul by default*/
+#navbar ul li ul {
+	display: none;
+}
+
+#navbar ul li:hover {
+	cursor: pointer;
+	background-color: var(--secondary-color);
+	color: var(--link-hover-color);
+}
+
+#navbar ul li:hover a {
+	color: var(--link-hover-color);
+}
+
+/*Show nested elements on Hover*/
+#navbar ul li:hover ul {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 200px;
+	margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+	display: block;
+	background-color: var(--dropDown-background);
+}
+
+#navbar ul li:hover ul li a {
+	color: var(--primary-color);
+}
