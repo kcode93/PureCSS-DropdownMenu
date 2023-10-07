@@ -3,7 +3,7 @@
 	--primary-color: #333;
 	--secondary-color: #17c0cc;
 	--link-hover-color: #fff;
-	--dropDown-background: #e7e7e79f;
+	--dropDown-background: #ffffffe0;
 }
 
 html,
@@ -78,4 +78,36 @@ body {
 	text-align: center;
 	font-size: 0.8rem;
 	border-radius: 5px;
+}
+
+/*Showcase*/
+
+#showcase {
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 2rem;
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+#showcase h1 {
+	color: #fff;
+	font-size: 4rem;
+}
+
+/*Media Queries*/
+@media (max-width: 600px) {
+	#navbar ul li {
+		display: block;
+		transition: all 0.4s ease-in;
+	}
+
+	#navbar ul li:hover ul {
+		width: 100%;
+		position: relative;
+	}
 }
