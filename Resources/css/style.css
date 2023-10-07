@@ -3,7 +3,7 @@
 	--primary-color: #333;
 	--secondary-color: #17c0cc;
 	--link-hover-color: #fff;
-	--dropDown-background: #e7e7e7c0;
+	--dropDown-background: #e7e7e79f;
 }
 
 html,
@@ -59,4 +59,23 @@ body {
 
 #navbar ul li:hover ul li a {
 	color: var(--primary-color);
+}
+
+#navbar ul li:hover ul li:hover {
+	background: var(--primary-color);
+	border: 2px solid var(--secondary-color);
+}
+
+#navbar ul li:hover ul li:hover a {
+	color: var(--secondary-color);
+}
+
+#navbar ul li:hover ul li span {
+	float: right;
+	color: var(--link-hover-color);
+	background-color: var(--secondary-color);
+	padding: 0.2rem 0.5rem;
+	text-align: center;
+	font-size: 0.8rem;
+	border-radius: 5px;
 }
