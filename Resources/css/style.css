@@ -4,6 +4,7 @@
 	--secondary-color: #17c0cc;
 	--link-hover-color: #fff;
 	--dropDown-background: #ffffffe0;
+	--transitions-speed: 2s;
 }
 
 html,
@@ -55,6 +56,8 @@ body {
 #navbar ul li:hover ul li {
 	display: block;
 	background-color: var(--dropDown-background);
+	border: 2px solid transparent;
+	transition: all var(--transitions-speed);
 }
 
 #navbar ul li:hover ul li a {
